@@ -1,4 +1,3 @@
-<h1>Howdy!</h1>       
     <div class="main-container">
       <div class="image-row">
         <img class="avatar-image" src="/profile-pic.jpg" alt="book">
@@ -17,26 +16,14 @@
         <i class="fa-brands fa-spotify"></i></a>
 </div>
 
+<div class="links-row">
 <% @list_of_items.each do |the_item| %>
-  <div class="item>
-    <a href="<%= the_item.link_url %>">
-    <%= the_item.link_description %>
-    </a>
+  <div class="item">
+    <img src="<%= the_item.thumbnail_url %>" class="thumbnail" alt="">
 
-    <class="links-row">
-        <div class="item">
-          <img class="link-image" src="/thumbnails/img2.jpg" alt="flower2">
-          <a class="link-text" target="_blank" href="https://lingualism.com/">
-        Lingualism</a>
-        </div>
-        <div class="item">
-           <img class="link-image" src="/thumbnails/img3.jpg" alt="flower3">
-           <a class="link-text" target="_blank" href="https://talkinarabic.com/"> Talk in Arabic</a>
-        </div>
-        <div class="item">
-          <img class="link-image" src="/thumbnails/img4.jpg" alt="flower4">
-           <a class="link-text" target="_blank" href="http://rescue.org">International Rescue Committee</a>
-         </div>
+    <a class="link-text" target="_blank" href="<%= the_item.link_url %>">
+      <%= the_item.link_description %>
     </a>
   </div>
 <% end %>
+</div>
