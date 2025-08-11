@@ -20,6 +20,102 @@
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Bitter:ital,wght@0,100..900;1,100..900&family=Fira+Code:wght@300..700&family=Grandiflora+One&family=Italianno&family=Monsieur+La+Doulaise&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+        <style>
+      /* {
+        border: 1px red dashed;
+      }
+        */
+      
+      html {
+        min-height: 100%;
+      }
+
+      body {
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom:40px;
+        background: linear-gradient(285deg, #143c50, #14485d, #13566a, #116578, #0f7786, #0c8b95, #08a2a5, #04b5af);
+          /* Other declarations */
+        color: rgba(249, 209, 151, 1);
+        font-family:"Alegreya Sans";
+      }
+
+      a{
+        color: rgba(240, 240, 255, 1.0);
+      }
+
+      /* Other declarations */
+      .avatar-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+        border: solid #1b566d;
+      }
+
+      .link-image {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        border-radius: 48px;
+        border: solid #1b566d;
+      }
+
+      .item {
+        background-color: rgba(253, 232, 111, 0.5);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+
+      .image-row {
+        margin-bottom: 20px;
+      }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: "Grandiflora One";
+        font-size: 50px;
+        font-weight: 900;
+      }
+
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+      }
+
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
+      }
+      .item {
+        background-color: rgba(149, 123, 173, 0.5);
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+      }
+
+    </style>
   </head>
 
   <body>
